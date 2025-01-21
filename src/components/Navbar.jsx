@@ -9,7 +9,7 @@ import { nav } from 'framer-motion/client'
 const Navbar = () => {
   const [active, setActive] = useState('')
   return (
-    <nav className="{`${styles.paddindX} w-full flex items-center py-5 fixed top0 z-20 bg-primary`}">
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top0 z-20 bg-primary`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link 
           to="/" 
@@ -18,9 +18,10 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-          <img src={logo} alt="logo" className="w-24 h-24 object-contain"/>
+          <img src={logo} alt="logo" className="w-14 h-14 object-contain"/>
           <p className="text-white text-[18px] font-bold cursor-pointer">Caimeo <span className="sm:block hidden"> MERN-Stack </span></p>
         </Link>
+        <p className="text-red-500">Placeholder</p>
       </div>
     </nav>
   )
